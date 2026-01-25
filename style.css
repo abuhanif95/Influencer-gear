@@ -13,6 +13,18 @@ body {
   width: 100%;
 }
 
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
 /* Header Section */
 .navbar {
   display: flex;
@@ -29,13 +41,17 @@ body {
 }
 
 .logo {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 900;
   letter-spacing: -3px;
 }
 
 .logo span {
   color: var(--primary-color);
+}
+
+.logo .logo-highlights {
+  color: black;
 }
 
 .nav-links {
@@ -67,7 +83,7 @@ body {
 }
 
 .icon {
-  font-size: 25px;
+  font-size: 22px;
   color: rgb(48, 37, 41);
   font-weight: 500;
   cursor: pointer;
@@ -98,6 +114,51 @@ body {
   border-radius: 50%;
 }
 
+/* Hero Section */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: rgb(95, 95, 95);
+}
+
+.hero-btn {
+  text-decoration: none;
+}
+
+.hero-image {
+  max-width: 50%;
+}
+
+.hero-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Responsive for Small Devices */
 @media screen and (max-width: 576px) {
   #hamburgerMenu {
     display: block;
@@ -107,10 +168,52 @@ body {
   #searchIcon {
     display: none;
   }
+
+  .hero {
+    display: flex;
+    gap: 40px;
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+  }
+
+  .hero-details {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    background-image: url(./images/Circle\ design.svg);
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  #searchIcon {
+  #searchIcon,
+  .logo-highlights {
     display: none;
+  }
+
+  .hero {
+    gap: 10px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+  .hero-title {
+    font-size: 40px;
   }
 }
