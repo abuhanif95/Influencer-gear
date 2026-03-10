@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHT Products</title>
+    <title>SHT Products | Premium Gear</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -18,42 +18,57 @@
         </div>
 
         <h1 class="logo">
-          S<span>H</span>T &nbsp;<span class="logo-highlights">Products</span>
+          S<span>H</span>T <span class="logo-highlights">Products</span>
         </h1>
 
         <ul class="nav-links">
-          <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Products</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Sign up</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Log in</a></li>
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#products" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#signup" class="nav-link">Sign up</a>
+          </li>
+          <li class="nav-item"><a href="#login" class="nav-link">Log in</a></li>
         </ul>
 
         <div class="nav-icons">
-          <!-- Search -->
           <div class="icon search-icon" id="searchIcon">
             <i class="fas fa-search"></i>
           </div>
 
-          <!-- Cart -->
           <div class="icon cart-icon" id="cartIcon">
             <i class="fas fa-shopping-cart"></i>
             <span class="cart-count">5</span>
           </div>
+
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
       </nav>
+
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#products" class="mobile-link">Products</a>
+        <a href="#signup" class="mobile-link">Sign up</a>
+        <a href="#login" class="mobile-link">Log in</a>
+      </div>
     </header>
 
     <main>
-      <div class="hero">
+      <section id="home" class="hero">
         <div class="hero-details">
           <h1 class="hero-title">Elevate Your Content with Pro Creator Gear</h1>
           <p class="hero-description">
             Discover premium cameras, drones, lighting, and audio equipment for
-            serious influencer. Everything you need to create stunning content
+            serious influencers. Everything you need to create stunning content
             that stands out.
           </p>
           <a href="#products" class="hero-btn btn"
-            >Preebook Now <i class="fas fa-arrow-right"></i
+            >Prebook Now <i class="fas fa-arrow-right"></i
           ></a>
         </div>
         <div class="hero-image">
@@ -62,7 +77,7 @@
             alt="Professional Mirrorless Camera for Content Creators"
           />
         </div>
-      </div>
+      </section>
 
       <div class="companies">
         <img src="./logos/Alibaba.svg" alt="Alibaba" />
@@ -74,200 +89,214 @@
         <img src="./logos/Target.svg" alt="Target" />
       </div>
 
-      <div class="products">
+      <section id="products" class="products">
         <h2>Popular Collection</h2>
         <div class="product-cards">
           <div class="product-card">
-            <img src="./images/tripod.png" alt="tripod" />
-            <h4 class="product-title">Flex Tripod</h4>
-            <span class="product-price">$50.48</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.5</span>
+            <div class="card-image">
+              <img src="./images/tripod.png" alt="Flex Tripod" />
             </div>
-
-            <p class="product-details">
-              Worldwide shifting <br />
-              available <br />
-              Buyers protection possible!
-            </p>
+            <div class="card-content">
+              <h4 class="product-title">Flex Tripod</h4>
+              <span class="product-price">$50.48</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.5</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
+            </div>
           </div>
           <div class="product-card">
-            <img src="./images/mic.png" alt="tripod" />
-            <h4 class="product-title">Microphone</h4>
-            <span class="product-price">$120.25</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.99</span>
+            <div class="card-image">
+              <img src="./images/mic.png" alt="Microphone" />
             </div>
-
-            <p class="product-details">
-              Worldwide shifting available <br />
-              Buyers protection possible!
-            </p>
+            <div class="card-content">
+              <h4 class="product-title">Microphone</h4>
+              <span class="product-price">$120.25</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.99</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
+            </div>
           </div>
           <div class="product-card">
-            <img src="./images/airpod.png" alt="airpod" />
-            <h4 class="product-title">Airbuds</h4>
-            <span class="product-price">$100.00</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.70</span>
+            <div class="card-image">
+              <img src="./images/airpod.png" alt="Airbuds" />
             </div>
-
-            <p class="product-details">
-              Worldwide shifting available <br />
-              Buyers protection possible!
-            </p>
+            <div class="card-content">
+              <h4 class="product-title">Airbuds</h4>
+              <span class="product-price">$100.00</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.70</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
+            </div>
           </div>
           <div class="product-card">
-            <img src="./images/drone.png" alt="drone" />
-            <h4 class="product-title">Drone</h4>
-            <span class="product-price">$980.25</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.78</span>
+            <div class="card-image">
+              <img src="./images/drone.png" alt="Drone" />
             </div>
-
-            <p class="product-details">
-              Worldwide shifting <br />
-              available <br />
-              Buyers protection possible!
-            </p>
+            <div class="card-content">
+              <h4 class="product-title">Drone</h4>
+              <span class="product-price">$980.25</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.78</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
+            </div>
           </div>
           <div class="product-card">
-            <img src="./images/lights.png" alt="lights" />
-            <h4 class="product-title">Light Setup</h4>
-            <span class="product-price">$1200.00</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.90</span>
+            <div class="card-image">
+              <img src="./images/lights.png" alt="Light Setup" />
             </div>
-
-            <p class="product-details">
-              Worldwide shifting <br />
-              available <br />
-              Buyers protection possible!
-            </p>
+            <div class="card-content">
+              <h4 class="product-title">Light Setup</h4>
+              <span class="product-price">$1200.00</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.90</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
+            </div>
           </div>
           <div class="product-card">
-            <img src="./images/setup.png" alt="setup" />
-            <h4 class="product-title">Photoshoot set</h4>
-            <span class="product-price">$820.40</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.49</span>
+            <div class="card-image">
+              <img src="./images/setup.png" alt="Photoshoot Set" />
             </div>
-
-            <p class="product-details">
-              Worldwide shifting <br />
-              available <br />
-              Buyers protection possible!
-            </p>
+            <div class="card-content">
+              <h4 class="product-title">Photoshoot Set</h4>
+              <span class="product-price">$820.40</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.49</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
+            </div>
           </div>
           <div class="product-card">
-            <img src="./images/camera.png" alt="Camera" />
-            <h4 class="product-title">Vlogging Camera</h4>
-            <span class="product-price">$1880.48</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.80</span>
+            <div class="card-image">
+              <img src="./images/camera.png" alt="Vlogging Camera" />
             </div>
-
-            <p class="product-details">
-              Worldwide shifting <br />
-              available <br />
-              Buyers protection possible!
-            </p>
-          </div>
-          <div class="product-card last-card">
-            <img src="./images/single-light.png" alt="single-light" />
-            <h4 class="product-title">Green Screen</h4>
-            <span class="product-price">$25.48</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.69</span>
+            <div class="card-content">
+              <h4 class="product-title">Vlogging Camera</h4>
+              <span class="product-price">$1880.48</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.80</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
             </div>
-
-            <p class="product-details">
-              Worldwide shifting <br />
-              available <br />
-              Buyers protection possible!
-            </p>
           </div>
           <div class="product-card">
-            <img src="./images/action.png" alt="action" />
-            <h4 class="product-title">Action Camera</h4>
-            <span class="product-price">$380.0</span>
-
-            <!-- Rating Stars -->
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">4.86</span>
+            <div class="card-image">
+              <img src="./images/single-light.png" alt="Green Screen" />
             </div>
-
-            <p class="product-details">
-              Worldwide shifting available <br />
-              Buyers protection possible!
-            </p>
+            <div class="card-content">
+              <h4 class="product-title">Green Screen</h4>
+              <span class="product-price">$25.48</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.69</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image">
+              <img src="./images/action.png" alt="Action Camera" />
+            </div>
+            <div class="card-content">
+              <h4 class="product-title">Action Camera</h4>
+              <span class="product-price">$380.00</span>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="rating-number">4.86</span>
+              </div>
+              <p class="product-details">
+                Worldwide shifting available<br />
+                Buyers protection possible
+              </p>
+              <button class="card-btn">Add to Cart</button>
+            </div>
           </div>
         </div>
-        <a href="">See More <i class="fas fa-arrow-right"></i></a>
-      </div>
+        <a href="#" class="see-more-link"
+          >See More <i class="fas fa-arrow-right"></i
+        ></a>
+      </section>
 
-      <div class="feature">
+      <section id="feature" class="feature">
         <div class="feature-image">
           <img src="./images/gear.png" alt="gear" />
         </div>
@@ -284,39 +313,33 @@
             Join Now <i class="fas fa-arrow-right"></i>
           </button>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
       <div class="footer">
         <h1 class="footer-logo">
-          S<span>H</span>T &nbsp;<span class="footer-logo-highlights">Products</span>
+          S<span>H</span>T <span class="footer-logo-highlights">Products</span>
         </h1>
         <small>Copyright &copy; 2026 SHT influencer products</small>
         <small>All rights reserved</small>
-        <!-- Social Media Icons -->
         <div class="social-icons">
-          <!-- Facebook -->
           <a href="https://facebook.com" target="_blank" class="social-icon">
             <i class="fab fa-facebook-f"></i>
           </a>
-
-          <!-- Instagram -->
           <a href="https://instagram.com" target="_blank" class="social-icon">
             <i class="fab fa-instagram"></i>
           </a>
-
-          <!-- Twitter/X -->
           <a href="https://twitter.com" target="_blank" class="social-icon">
             <i class="fab fa-twitter"></i>
           </a>
-
-          <!-- YouTube -->
           <a href="https://youtube.com" target="_blank" class="social-icon">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
